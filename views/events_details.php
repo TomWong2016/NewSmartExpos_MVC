@@ -79,8 +79,9 @@ if(isset($_GET['tab'])){
     	<div class="LeftDiv">
         	<!-- content details -->
             <div class="boxes event">
-                <div class="Txt1"><a href="#">SMART EXPO - HONG KONG</a></div>
+                <!--<div class="Txt1"><a href="#">SMART EXPO - HONG KONG</a></div>
                 <div class="Txt2">4 - 5 June 2016. Hall 3E, Hong Kong Convention & Exhibition Centre<br/></div>
+                -->
                 <?php
                     if(sizeof($expos_result)>0){
                           echo '  <div class="Txt1"><a href="#">'.$expos_result[0]['expos_title_en'].'</a></div>';
