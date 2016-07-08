@@ -1,0 +1,105 @@
+@charset "utf-8";
+/* CSS Document */
+
+#featureProp {
+	margin: 0 auto;
+}
+
+.overseasProp {
+	border-bottom: 0;
+    margin: 0;
+}
+.overseasProp:first-child {
+	margin-top: 30px;
+}
+.overseasProp .key {
+	background: #e9f1f5
+}
+.overseasProp .key:hover {
+	border: 2px solid #ccdce4;
+}
+.overseasProp .row2 {
+	margin: 0 auto
+}
+.overseasProp.details .LeftDiv .img {
+	min-height: 400px;
+}
+
+
+@media screen and (max-width:999px){
+	.overseasProp .RightDiv {
+		margin-top: 20px;
+	}
+	.overseasProp.details .LeftDiv .img {
+		min-height: 250px;
+	}
+}
+@media screen and (max-width:767px){
+	.overseasProp {
+		margin: 20px 0;
+	}
+	.overseasProp .LeftDiv {
+		max-width: 100%;
+		min-width: 300px;
+		margin-right:0
+	}
+	.overseasProp .RightDiv {
+		width: 100%
+	}
+}
+
+
+/** Featured Property **/
+@media screen and (max-width:999px){
+	#featureProp .img{
+		 height: 183px;
+	}
+	#featureProp .more {
+		top: 165px;
+	}
+	#featureProp .more:hover {
+		top: 163px;
+	}
+}
+
+
+/** might also like **/
+.featured .box{	
+	width: 30.5%;
+}
+.featured .more {
+	background: #330557;
+}
+.featured .desc {
+	background: #330557;
+}
+@media screen and (max-width:999px){
+	.featured .box,
+	.featured .box:last-child {
+		/*max-width: 650px;
+		min-width: 213px;*/
+		margin: 0 5px 15px 5px;
+	}
+}
+@media screen and (max-width:539px){
+	.featured .box{	
+		width: 100%;
+	}
+}
+
+
+/*** details page ***/
+section.overseasProp.details {
+	flex-flow: row nowrap;
+}
+@media screen and (max-width:767px){
+	section.overseasProp.details {
+		flex-flow: row wrap;
+	}
+}
+@media screen and (max-width: 425px) {
+	.page {
+		position: initial;
+		margin-top: 15px;
+	}
+}

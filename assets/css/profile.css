@@ -1,0 +1,317 @@
+@charset "utf-8";
+/* CSS Document */
+
+.profile {
+	border-bottom: 0;
+    padding-bottom: 0;
+    margin: 0;
+}
+.profile:first-child {
+    margin-top: 30px;
+}
+.logoList {
+	flex-flow: row nowrap;
+}
+.LeftDiv {
+	margin-right: 20px;
+}
+@media screen and (max-width: 999px){
+	.RightDiv {
+		margin-top: 20px;
+	}
+}
+@media screen and (max-width: 767px){
+	.profile:first-child {
+		border-bottom: 1px solid #CCC
+	}
+	.LeftDiv {
+		max-width: 100%;
+		min-width: 300px;
+		margin-right: 0;
+	}
+	.RightDiv {
+		width: 100%;
+	}
+	.logoList {
+		flex-flow: row wrap;
+	}
+}
+@media screen and (max-width: 425px){
+	.RightDiv {
+    	margin-top: 0;
+	}
+}
+
+/** Logo listing slider **/
+.groupDiv{
+	border-bottom: 1px solid #B9B9B9;
+	padding-bottom: 25px;
+	margin-bottom: 25px;
+}
+.groupDiv:first-child{ border-bottom: 1px solid #B9B9B9; }
+
+@media screen and (max-width: 768px){
+	.groupDiv:last-child{ margin-bottom: 0 }
+	.groupDiv:first-child .GlobalTitle2{ margin-top: 25px; }
+}
+@media screen and (max-width: 425px){
+	.groupDiv:last-child{ margin-bottom: 25px }
+}
+
+/* webView */
+.webView {
+	position: relative;
+	max-width: 680px;
+	display: flex;
+    flex-flow: row wrap;
+}
+.webView .btn {
+	display: flex;
+    flex-flow: row wrap;
+	align-items: center;
+	background: #176087;
+	color: #FFF;
+	width: 30px;
+	height: 90px;
+}
+.webView .unslider {
+	flex-grow: 1;
+}
+.webView .unslider li, 
+.webView .unslider ol, 
+.webView .unslider ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.webView .btn.left {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	margin-right: 12px;
+}
+.webView .btn.right {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	margin-left: 12px;
+}
+.webView .btn .icon-caret-right, .webView .btn .icon-caret-left{
+	flex-grow: 1;
+	font-size: 30px;
+	height: 30px;
+	width: 30px;
+}
+.webView a.btn { border-bottom: 0; cursor:pointer}
+.webView a.btn:hover { background: #0081c6}
+.webView a.btn.disable { background: #ccc; cursor: default;}
+.webView .main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.webView .main a { border-bottom: none}
+.webView .logoDiv {
+	flex-grow: 1;
+	text-align: center;
+	max-width: 190px;
+}
+.webView .logoDiv .img {
+	min-height: 90px;
+	min-width: 120px;
+	margin-bottom: 5px;
+	border: 1px solid #B9B9B9;
+	background: #fff center center no-repeat;
+	background-size: contain;
+		-moz-background-size: contain;
+}
+.webView a:hover .logoDiv .img {
+	border: 1px solid #666;
+	box-shadow: 0 0 3px #999;
+}
+.mobileView { display: none}
+@media screen and (max-width: 999px){
+	.webView {
+		display: none;
+	}
+	/* mobileView */
+	.mobileView {
+		display: block;
+		overflow-x: auto;
+		overflow-y: hidden;
+		width: 100%
+	}
+	.mobileView .realDiv {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		align-items: flex-start;
+		align-content: space-around;
+		width: 1000px; /** need to be set by programming - base on number of logos */
+		margin-bottom: 15px;
+	}
+	.mobileView a { border-bottom: none}
+	.mobileView .logoDiv {
+		flex-grow: 1;
+		text-align: center;
+		margin-right: 8px;
+	}
+	.mobileView .logoDiv .img {
+		min-height: 90px;
+		min-width: 130px;
+		margin-bottom: 5px;
+		border: 1px solid #B9B9B9;
+		background: #fff center center no-repeat;
+		background-size: contain;
+			-moz-background-size: contain;
+	}
+	.mobileView a:hover .logoDiv .img {
+		border: 1px solid #666;
+		box-shadow: 0 0 3px #999;
+	}
+}
+
+/** details page **/
+.profile.details {
+    flex-flow: row nowrap;
+}
+.sectionDiv .img .companyLogo {
+	background: white;
+	width: 200px;
+	height: 90px;
+	margin-left: 20px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center; 
+}
+
+@media screen and (max-width: 999px) {
+	.profile.details, .profile .interested {
+		max-width: 100%;
+	}
+}
+@media screen and (max-width: 767px){
+	.profile.details {
+		flex-flow: row wrap;
+	}
+	.details .content .img .companyLogo {
+		width: 170px;
+    	height: 70px;
+	}
+}
+
+.logoListDiv {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+	max-width: 680px;
+	
+	flex-grow: 1
+}
+.logoListDiv a { 
+	border-bottom: none; 
+	flex-grow: 1;
+	margin: 0 5px 20px 5px;
+}
+.logoListDiv .logoDiv {
+    min-width: 180px;
+	width: 100%;
+    text-align: center;
+}
+.logoListDiv .logoDiv .img {
+	min-height: 90px;
+    margin-bottom: 5px;
+    border: 1px solid #B9B9B9;
+    background: #fff center center no-repeat;
+    background-size: contain;
+    -moz-background-size: contain;
+}
+.logoListDiv a:hover .logoDiv .img {
+	border: 1px solid #666;
+	box-shadow: 0 0 3px #999;
+}
+.logoListDiv.awards .img {
+	background-size: cover;
+}
+@media screen and (max-width: 922px){
+	.logoListDiv .logoDiv {
+		max-width: 100%
+	}
+}
+@media screen and (max-width: 768px){
+	.logoListDiv {
+		max-width: 100%;
+		justify-content: center;
+	}
+}
+@media screen and (max-width: 426px){
+	.logoListDiv .logoDiv {
+	}
+}
+
+/** Featured Projects **/
+.featured .box {
+    width: 48%;
+	margin-bottom: 20px;
+}
+.featured .desc, .featured .more {
+    background: #000;
+}
+@media screen and (max-width: 999px){
+	.featured {
+		min-width: 100%
+	}
+}
+@media screen and (max-width: 768px){
+	.featured .box, .featured .box:last-child {
+		margin: 0 4px 15px 4px;
+	}
+}
+@media screen and (max-width: 539px){
+	.featured .box {
+    	width: 100%;
+	}
+}
+
+/** property details page **/
+#property.details {
+	flex-flow: row nowrap;
+}
+.propDetails {
+	display: flex;
+}
+.propDetails .img {
+	width: 400px;
+	height: 300px;
+	margin-right: 20px;
+}
+.propDetails .details {
+	flex-grow: 1;
+	font-size:110%
+}
+.propDetails .details .table {
+	margin-bottom: 5px;
+}
+.propDetails .details .label { width: 90px;}
+#property .nav-tabs>li {
+	flex-grow: initial;
+}
+@media screen and (max-width: 979px){
+	#property.details {
+		flex-flow: row nowrap;
+	}
+	.propDetails {
+    	flex-flow: row wrap;
+	}
+	.propDetails .img {
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 15px;
+	}
+}
+@media screen and (max-width: 679px){
+	#property.details {
+		flex-flow: row wrap;
+	}
+	.propDetails .img {
+	}
+}

@@ -1,0 +1,319 @@
+/* z-index Start */
+
+
+.listing .img {
+	min-height: 178px;
+	min-width: 220px;
+}
+
+#HotEvent a { border-bottom: none}
+#HotEvent .LeftDiv {
+	margin-right: 20px;
+    flex-grow: 1;
+    width: 680px;
+}
+#HotEvent .eventDesc { position:relative}
+#HotEvent .count_down {
+	margin-top: -100px;
+	float: right
+}
+#HotEvent a{ color:#333}
+#HotEvent a:hover { color:#007ac5;}
+#HotEvent .Txt1{ font-size:153.9%; text-transform:uppercase; }
+#HotEvent .Txt2{ font-size:123.1%; padding:2px 0 20px 0; }
+#HotEvent .ImgDiv{ 
+	width: 100%;
+    min-width: 280px;
+	height:300px;
+    float: left;
+    background: #fff top left no-repeat;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+#HotEvent .EventBtn a:hover { border-bottom: none}
+#HotEvent .EventBtn{ font-size:130%; border:1px solid #ccc; border-top:0px; padding: 10px; display: flex; align-items: center; justify-content: center }
+#HotEvent .EventBtn .left {  flex-grow:1}
+#HotEvent .EventBtn a:hover.left { color: #0081c6}
+#HotEvent .EventBtn .right { align-items: center; display: flex}
+#HotEvent .EventBtn .icon-fb2{ color:#3b5998; font-size:32px; height: 35px; padding-left: 10px;} 
+#HotEvent .EventBtn .icon-skype{ color:#00adef; font-size: 36px;  height: 35px; padding-left:10px} 
+#HotEvent .EventBtn a:hover.icon-fb2, 
+#HotEvent .EventBtn a:hover.icon-skype { 
+	color: #777
+}
+#HotEvent .EventBtn .icon-right-1 { padding: 10px 0 0 8px}
+
+#smallEvent { 
+	height: 215px; 
+	width: 300px;
+	background:#ccc; 
+	margin: 0 auto 20px auto;
+	position: relative
+}
+#smallEvent .img{ 
+	height: 215px;
+	width: 100%;
+    min-width: 220px;
+    float: left;
+    position: relative;
+    background: #fff center center no-repeat;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+#smallEvent .unslider-wrap .txtBg {
+	background: rgba(0, 0, 0, 0.6);
+	min-height: 50px;
+    width: 100%;
+	padding: 10px 10px 20px 10px;
+	position: absolute;
+    bottom: 0;
+}
+#smallEvent .unslider-wrap .txtBg .txt {
+	color: #FFF;
+}
+
+@media screen and (max-width:999px){
+	#smallEvent {
+		margin-right: 20px;
+		flex-grow: 1;
+	}
+	#smallEvent, #smallEvent .img {
+		height: 250px;
+	}
+}
+@media screen and (max-width:767px){
+	#smallEvent {
+			width: 100%;
+			margin: 0 auto 20px auto;
+		}
+}
+@media screen and (max-width:426px){
+	#smallEvent {
+		margin-right:0;
+		margin-bottom: 20px;
+	}
+	#HotEvent .EventBtn .left {
+		flex-grow: initial;
+		margin-bottom: 10px;
+	}
+}
+@media screen and (max-width:318px){
+	#smallEvent {
+		margin-right: 0
+	}
+}
+
+/** latestFeatures **/
+#latestFeatures {
+	flex-flow: row nowrap;
+}
+#latestFeatures .RightDiv .row {
+	margin-bottom: 0
+}
+@media screen and (max-width:999px){
+	#latestFeatures {
+		flex-flow: row wrap;
+	}
+}
+
+
+/** Profile **/
+#profile .GlobalTitle { width: 100%}
+#profile a { color: #333; border-bottom: none}
+#profile a:hover { color: #007ac5;}
+#profile .column {
+    flex-grow: 1;
+	max-width: 465px;
+	margin-right:50px
+}
+#profile .column:last-child {
+	margin-right:0;
+	padding: 0;
+	border: 0
+}
+#profile .logo {
+	width:190px;
+	margin: 0 auto;
+	opacity: 0.8
+}
+#profile a:hover .logo {
+	opacity: 1
+}
+#profile .Name{
+	font-size: 20px;
+	text-transform: uppercase;
+}
+#profile .Txt1 {
+	color:#0081c6;
+	font-size: 16px;
+	margin-bottom: 5px;
+}
+#profile .Txt2 {
+	font-size: 14px;
+	margin-bottom: 20px
+}
+
+/** Who **/
+#who { border-bottom: none; margin-bottom: 0}
+#who p {
+	max-width: 650px;
+	min-width: 280px;
+	width: 100%
+}
+#who .RightDiv {
+	min-width: 280px;
+}
+#who button {
+	background:#176087;
+	width: 100%;
+	margin-bottom: 10px;
+}
+#who button:hover{ background:#007ac5}
+#who button img { vertical-align: bottom}
+
+
+.CurtainBanner .curtain{ width:955px; height:250px; margin:0px auto; background-color:#CCCCCC; }
+.CurtainBanner .SuperBanner div { 
+	display: none
+}
+
+/** feature properties **/
+@media screen and (max-width:999px){
+	#featureProp {
+		flex-grow: 1;
+		margin-right: 20px;
+	}
+	#featureProp .img {
+		height: 183px;
+	}
+	#featureProp .more { top: 165px}
+	#featureProp .more:hover { top: 163px}
+}
+@media screen and (max-width:767px){
+	#featureProp { 
+		width: 100%;
+    	margin: 0 auto 20px auto;
+	}
+	/*#featureProp .RLBox .icon-left-1, 
+	#featureProp .RLBox .icon-right-1 { bottom: 5px}*/
+	#featureProp .more { bottom: 60px}
+	#featureProp .more:hover { bottom: 65px}
+}
+@media screen and (max-width:426px){
+	#featureProp  {
+		margin: 0 0 20px 0;
+	}
+	#featureProp .desc { font-size:90%}
+}
+@media screen and (max-width:318px){
+	#featureProp  {
+		margin-right: 0
+	}
+}
+
+/** **/
+
+@media screen and (max-width:999px){
+	.CurtainBanner .curtain{ 
+		display: none
+	}
+	.CurtainBanner .SuperBanner div { 
+		display: block; width: 728px; height:90px; margin: 0 auto;  background:#000
+	}
+	
+	#HotEvent .LeftDiv { 
+		margin: 0; 
+		width: 100%
+	}
+	#HotEvent .RightDiv { 
+		margin-top: 20px;
+		min-width: 300px;
+   		width: 100%;
+	}
+	#HotEvent .RightDiv .row {
+		flex-flow: row nowrap;
+	}
+	#HotEvent .RightDiv .row,
+	#latestFeatures .RightDiv .row {
+		width: 100%;
+	}
+
+	#profile .row {
+		flex-flow :row nowrap;
+	}
+	#profile .column {
+		max-width: 100%
+	}
+	
+	#latestFeatures .RightDiv {
+		margin-top: 20px;
+		min-width: 300px;
+		width: 100%;
+	}
+	#who p { max-width: 415px;}
+}
+
+@media screen and (max-width:767px){
+	.CurtainBanner .CurtainBanner { padding: 0}
+	.CurtainBanner .SuperBanner div { width: 320px; height: 110px;}
+	
+	#HotEvent .RightDiv .row, 
+	#profile .row {
+		flex-flow: row wrap;
+	}
+	
+	#HotEvent .ImgDiv { height: 170px;}
+	#HotEvent .RightDiv .row { min-width: 100%;}
+	
+	
+	#HotEvent .count_down { display: none}
+	#HotEvent .count_down2 { 
+		display: block; 
+		position: absolute; 
+		right: 2px; 
+		top: 105px;
+		background-color: rgba(255, 149, 24, 0.7); 
+		padding:5px;
+		padding-top:0;
+		text-align: center;
+		font-size: 12px;
+		
+		border-radius: 5px;
+			-moz-border-radius: 5px;
+			-webkit-border-radius: 5px
+	}
+	#HotEvent .count_down2 h2 { 
+		font-weight: bold; 
+		line-height: 28px;
+    	font-size: 110%;
+	}
+	#HotEvent .count_down2 .txt { color:#FFF}
+	#HotEvent .EventBtn { padding: 8px; flex-wrap:wrap}
+	
+	#profile .column {
+		margin:0;
+		text-align: center;
+    	border-bottom: 1px solid #ccc;
+    	padding-bottom: 40px;
+	}
+	
+	
+	#latestFeatures .RightDiv .row {
+		flex-flow: row wrap;
+	}
+
+	#who .RightDiv {
+		margin: 0 auto
+	}
+	#who p {
+    	width: 100%;
+    	margin-right: 0;
+	}
+}
+
+
+@media screen and (max-width:318px){
+	#who p {
+		margin-right: 0
+	}
+}
